@@ -48,6 +48,7 @@ while (true) {
     end = middle - 1; 
   } else if (answer === "=") {
     alert(`Ваше число: ${middle}!`);
+    break;
 } else {
     alert("Будь-ласка, введіть '>' '<' або '='!"); 
   }
