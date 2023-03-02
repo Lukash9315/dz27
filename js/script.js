@@ -1,7 +1,7 @@
 
-let userDate = prompt("Введіть дату в форматі ДД.ММ.РРР");
+let userDate = prompt("Введіть дату в форматі ДД-ММ-РРР");
 
-let dateParts = userDate.split(".");
+let dateParts = userDate.split("-");
 let userDay = parseInt(dateParts[0]);
 let userMonth = parseInt(dateParts[1]) - 1;
 let userYear = parseInt(dateParts[2]);
@@ -21,7 +21,7 @@ if (nextDateTime.getFullYear() !== userYear) {
 let nextDay = nextDateTime.getDate();
 let nextMonth = nextDateTime.getMonth() + 1;
 let nextYear = nextDateTime.getFullYear();
-alert(`Наступна дата: ${nextDay}.${nextMonth}.${nextYear}`);
+alert(`Наступна дата: ${nextDay}-${nextMonth}-${nextYear}`);
 console.log(`Наступна дата: ${nextDay}-${nextMonth}-${nextYear}`);
 
 
